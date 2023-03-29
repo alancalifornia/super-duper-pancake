@@ -1,0 +1,16 @@
+/* 
+Created By: Alan 
+Created ON: March 2023
+Description: This query selects the first 10 recorsd 
+from the customers table, ordered by first name (ascending), then last name (descending).
+*/
+SELECT 
+	FirstName AS [First Name],
+	LastName AS [Last Name], 
+	Email AS [Email]
+FROM 
+customers
+Order By 
+	FirstName ASC,
+	LastName Desc
+LIMIT 10
